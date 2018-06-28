@@ -1,0 +1,21 @@
+{
+    "name": "Image changer",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+    	{
+    		"matches":[
+    			"<all_urls>"
+    		],
+    		"js": ["content.js"]
+    	}
+
+    ],
+    "background": {
+    	"scripts": ["background.js"]
+    },
+    "browser_action":{
+    	"default_icon": "./images/franny.png",
+    	"default_title": "Franny-fy the page!"
+    }
+  }
