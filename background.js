@@ -5,5 +5,6 @@ function buttonClicked(tab){
 		txt: "button pressed"
 	}
 	chrome.tabs.sendMessage(tab.id, msg);
+	console.log("button has been clicked");
 
 }
